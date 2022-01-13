@@ -6,11 +6,17 @@ O git bash é um console para utilizar o git
 Alguns comandos do git:
 
 ------Comandos para mudar nick e email:------------------------
+
 git config --global --unset user.email
 git config --global --unset user.nickname
 
 git config --global user.email [seu email]
 git config --global user.nickname [seu nick]
+
+------Comandos para apagar e salvar token:---------------------
+
+git config --global --unset credential.helper (apagar da máquina local)
+git config --global credential.helper cache (salvar - usar depois do git ter solicitado o token)
 
 ------Comandos para criar um clone-----------------------------
 
